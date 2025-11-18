@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "vehicleLengthMeasure": [
+    {
+      "value": 12,
+      "measurementUnitCode": "MTR"
+    }
+  ],
+  "containerParametersIndicator": true
+}

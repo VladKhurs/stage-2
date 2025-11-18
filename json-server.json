@@ -1,0 +1,6 @@
+{
+  "port": 3004,
+  "watch": true,
+  "database": "./mocks/db.json",
+  "routes": "./routes.json"
+}

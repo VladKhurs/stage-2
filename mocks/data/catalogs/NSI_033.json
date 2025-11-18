@@ -1,0 +1,5 @@
+[
+  { "code": "MTR", "ru_name": "Метр" },
+  { "code": "KGM", "ru_name": "Килограмм" },
+  { "code": "CMT", "ru_name": "Сантиметр" }
+]

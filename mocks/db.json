@@ -1,0 +1,108 @@
+{
+  "forms": [
+    {
+      "id": 1,
+      "vehicleLengthMeasure": [
+        {
+          "value": 72345,
+          "measurementUnitCode": "СМТ"
+        },
+        {
+          "value": 234,
+          "measurementUnitCode": "СМТ"
+        }
+      ],
+      "containerParametersIndicator": true,
+      "vehicleBrand": "LADA",
+      "ownerName": "Иванов Иван",
+      "maxSpeed": 185,
+      "driveType": "FULL"
+    }
+  ],
+  "NSI_033": [
+    {
+      "code": "MTR",
+      "ru_name": "Метр"
+    },
+    {
+      "code": "KGM",
+      "ru_name": "Килограмм"
+    },
+    {
+      "code": "CMT",
+      "ru_name": "Сантиметр"
+    }
+  ],
+  "NSI_046": [
+    {
+      "code": "TOYOTA",
+      "ru_name": "Toyota"
+    },
+    {
+      "code": "BMW",
+      "ru_name": "BMW"
+    },
+    {
+      "code": "LADA",
+      "ru_name": "Lada"
+    }
+  ],
+  "openapi": {
+    "openapi": "3.0.1",
+    "components": {
+      "schemas": {
+        "VehicleOverallDimensionDetails": {
+          "type": "object",
+          "properties": {
+            "vehicleLengthMeasure": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "measurementUnitCode": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value",
+                  "measurementUnitCode"
+                ]
+              }
+            },
+            "containerParametersIndicator": {
+              "type": "boolean"
+            },
+            "vehicleBrand": {
+              "type": "string",
+              "description": "Марка транспортного средства"
+            },
+            "ownerName": {
+              "type": "string",
+              "description": "ФИО владельца"
+            },
+            "maxSpeed": {
+              "type": "number",
+              "description": "Максимальная скорость"
+            },
+            "driveType": {
+              "type": "string",
+              "enum": [
+                "FRONT",
+                "REAR",
+                "FULL"
+              ],
+              "description": "Тип привода"
+            }
+          },
+          "required": [
+            "vehicleLengthMeasure",
+            "vehicleBrand"
+          ]
+        }
+      }
+    }
+  }
+}

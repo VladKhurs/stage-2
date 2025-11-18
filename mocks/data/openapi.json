@@ -1,0 +1,25 @@
+{
+  "openapi": "3.0.1",
+  "components": {
+    "schemas": {
+      "VehicleOverallDimensionDetails": {
+        "type": "object",
+        "properties": {
+          "vehicleLengthMeasure": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": { "type": "number" },
+                "measurementUnitCode": { "type": "string" }
+              },
+              "required": ["value", "measurementUnitCode"]
+            }
+          },
+          "containerParametersIndicator": { "type": "boolean" }
+        },
+        "required": ["vehicleLengthMeasure"]
+      }
+    }
+  }
+}

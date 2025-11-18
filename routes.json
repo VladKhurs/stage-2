@@ -1,0 +1,5 @@
+{
+  "/api/openapi": "/openapi",
+  "/api/catalog/:name": "/:name",
+  "/api/form/:id": "/forms/:id"
+}
